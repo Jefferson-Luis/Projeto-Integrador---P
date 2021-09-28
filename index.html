@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <title src="">Hotel Jef's</title>
+    <link rel="sortcut icon" href="_imagens/logo.png" type="image/gif" />;
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="_css/estilo.css">
+    <script src="_javascript/estilo.js"></script>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <img src="_imagens/logo_transparent.png" class="w3-image w3-greyscale-min" style="width:10%">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="quem_somos.html">QUEM SOMOS</a></li>
+                    <li><a href="servico.html">SERVIÇOS</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="reserva.html">RESERVAS</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1>HOTEL Jef's</h1>
+        <p>Conforto e tradição</p>
+        <form>
+            <div class="input-group">
+                <input type="email" class="form-control" size="50" placeholder="Pesquisa por hospedagem" required>
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger">Pesquisa</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div id="portfolio" class="container-fluid text-center bg-grey">
+        <h2>Portfolio</h2><br>
+        <h4>Acomodações</h4>
+        <div class="row text-center slideanim">
+
+            <div class="modal fade" id="modal-mensagem">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="thumbnaill">
+                                <img src="_imagens/office-room.webp" alt="office" width="400" height="300">
+                                <p><strong>Office Room</strong></p>
+                                <p>Apartamento sem cama. Ambiente privativo adaptado para escritório.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-default" data-toggle="modal" data-target="#modal-mensagem">
+                        <img src="_imagens/office-room.webp" alt="office" width="400" height="300">
+                        <p><strong>OFFICE ROOM</strong></p>
+            </button>
+
+        
+            <div class="modal fade" id="modal-mensagem2">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span>c</span></button>
+                            <h4 class="modal-title">Suite Standard</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="thumbnaill">
+                                <img src="_imagens/quarto3.jpg" alt="standard" width="400" height="300">
+                                <p><strong>SUITE Standard</strong></p>
+                                <p>O apartamento Standard é ideal para viagens de negócios ou de casais</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-default" data-toggle="modal" data-target="#modal-mensagem2">             
+                        <img src="_imagens/quarto3.jpg" alt="standard" width="300" height="300">
+                        <p><strong>SUITE STANDARD</strong></p>         
+            </button>
+
+            <div class="modal fade" id="modal-mensagem3">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                            <h4 class="modal-title">Suite Standard</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="thumbnaill">
+                                <img src="_imagens/quarto_triplo.jpg" alt="premium" width="400" height="300">
+                                <p><strong>SUITE Premium</strong></p>
+                                <p>Conectado com dois dormitórios, o apartamento é ideal para quem está viajando com
+                                    amigos ou
+                                    com a família.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn btn-default" data-toggle="modal" data-target="#modal-mensagem3">
+                
+                        <img src="_imagens/quarto_triplo.jpg" alt="premium" width="400" height="300">
+                        <p><strong>SUITE PREMIUM</strong></p>
+                   
+            </button>
+            <br>
+
+</body>
+
+</html>
